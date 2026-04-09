@@ -1,19 +1,23 @@
 # Week 2 — A2 competency claim
 
-*Replace or tighten any paragraph below so it matches how you actually worked. The headings are common assignment themes; rename them if your rubric uses different labels.*
+This repo documents work that supports **UX research–adjacent** practice: handling rows of participant-style responses, summarizing text in a lightweight way, and leaving a clear trail for anyone reviewing the method (instructor, teammate, or future me).
 
-## Working with structured survey data
+## Handling structured survey / interview-style responses
 
-I can open a CSV of survey responses and treat each row as one person’s answers with named columns (`participant_id`, `role`, `response`). The script reads the file safely with UTF-8 encoding and uses Python’s CSV helper so the table structure stays intact while I analyze text length.
+I can treat a CSV of open-ended answers as a table where each row is one voice, with stable column names so roles and IDs stay tied to the right text. Reading the file with proper encoding matters for real study exports; here the demo CSV stands in for that workflow so I can practice without using sensitive participant data.
 
-## Reading and explaining simple Python
+## Descriptive passes on qualitative text
 
-I can follow a short script that loads data into a list, loops over each row, and computes a simple metric (word count) per response. I added plain-English comments next to the main steps so someone else can see what each part does without knowing Python vocabulary.
+Word count is not “the analysis,” but it is a common **first desk check** in research-adjacent work: it helps spot very short or very long answers before deeper coding or theming. The script walks every response in order, prints a scannable table with a short preview, and ends with min / max / average so I can describe spread in one glance.
 
-## Using AI tools and owning the work
+## Explaining the pipeline in plain language
 
-I used Cursor and an AI assistant to draft and check code, then rewrote explanations in my own words in the comments and verified the script runs cleanly on the demo CSV. The final script and this file reflect what I understand and can defend, not copy-pasted output I did not read.
+I annotated the script with everyday explanations so a **non-engineer UX researcher or designer** can follow what the computer is doing at each step. That mirrors how I want to work in cross-functional teams: small, readable utilities and documentation that make handoff and critique easier, not black-box scripts only I understand.
+
+## AI-assisted drafting, human ownership
+
+I used AI tools to speed up drafting and checking, then **rewrote comments and this claim in my own words** and confirmed the script runs on the demo data. For research-adjacent work, that balance matters: tools can accelerate mechanics, but judgment about what to measure and how to describe it stays with the practitioner.
 
 ## Version control and submission
 
-I keep the assignment in a GitHub repository, commit changes with a clear message, and submit the repo URL on Canvas so the instructor can review the annotated script and this competency claim in one place.
+The GitHub repo holds the runnable script, the demo CSV, and this claim so reviewers can verify the work in one place; I submit the repo URL on Canvas as the assignment deliverable.
